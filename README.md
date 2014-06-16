@@ -1,4 +1,4 @@
-# navigator [Build Status](https://codeship.io/projects/d10dbc00-d464-0131-d880-3ea79a4fc40b/status) [![Coverage](http://img.shields.io/coveralls/vlacs/navigator/master.svg)](http://coveralls.io/r/vlacs/navigator)
+# navigator [![Codeship Status for vlacs/navigator](https://codeship.io/projects/e4c37ba0-d7c6-0131-f4de-6a39991381d1/status)](https://codeship.io/projects/23944) [![Coverage](http://img.shields.io/coveralls/vlacs/navigator/master.svg)](http://coveralls.io/r/vlacs/navigator)
 
 <img src="doc/Tapley_NPS.png" alt="Agnes Tapley: Navigating" width="200px" />
 
