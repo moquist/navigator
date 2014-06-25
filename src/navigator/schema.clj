@@ -11,7 +11,10 @@
             [:tags :ref :many]]
     :dbfns [(constraints/unique :comp :name :version)]}
    {:namespace :comp-tag
-    :attrs [[:name :string :indexed] ; not null
+    :attrs [[:id-sk :string]
+            [:id-sk-origin :keyword]
+            [:id-sk-with-origin :string :db.unique/identity]
+            [:name :string :indexed] ; not null
             [:description :string]
             [:version :string]     ; not null
             [:type :string :indexed] ; not null
@@ -19,13 +22,13 @@
             [:icon :uri]
             [:status :enum [:active :archived]] ; not null
             [:isfinal :boolean] ; default f
-            [:disp-ctxs :ref :many]
+            ;; [:disp-ctxs :ref :many]
             [:child-tags :ref :many]
             [:child-perf-asmts :ref :many]
             [:child-comps :ref :many]]
     :dbfns [(constraints/unique :comp-tag :name :version)]}
-   {:namespace :comp-tag-disp-ctx
-    :attrs [[:name :string]]}
+;;   {:namespace :comp-tag-disp-ctx
+;;    :attrs [[:name :string]]}
    {:namespace :user2comp
     :attrs [[:sis-user-id :bigint :indexed]
             [:comp :ref :indexed]
