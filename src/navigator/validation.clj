@@ -12,7 +12,13 @@
                     (s/optional-key :current-score)     s/Str
                     (s/optional-key :final-score)       s/Str
                     (s/optional-key :score-denominator) s/Int
-                    (s/optional-key :score-type)        s/Keyword}})
+                    (s/optional-key :score-type)        s/Keyword}
+   :comp {:id-sk s/Str
+          :id-sk-origin s/Keyword
+          :name s/Str
+          :description s/Str
+          :version s/Str
+          :status s/Str}})
 
 (comment
 

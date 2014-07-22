@@ -63,7 +63,9 @@
 ;; queue functions
 
 (defn comp-in [db-conn comp]
-  (tx-entity! db-conn :comp comp))
+  (tx-entity! db-conn :comp (-> comp
+                                (update-in [:status] #(hatch/slam :comp.status (keyword %)))
+                                (hatch/slam-all :comp))))
 
 (defn comp-tag-in [db-conn comp-tag]
   (tx-entity! db-conn :comp-tag comp-tag))
