@@ -1,3 +1,9 @@
+# This project is dead, unfortunately. #
+
+### We're keeping it here as a monument and potential source of inspiration. ###
+
+--
+
 # navigator [![Codeship Status for vlacs/navigator](https://codeship.io/projects/e4c37ba0-d7c6-0131-f4de-6a39991381d1/status)](https://codeship.io/projects/23944) [![Coverage](http://img.shields.io/coveralls/vlacs/navigator/master.svg)](http://coveralls.io/r/vlacs/navigator)
 
 <img src="doc/Tapley_NPS.png" alt="Agnes Tapley: Navigating" width="200px" />
